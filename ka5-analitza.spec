@@ -1,15 +1,15 @@
-%define		kdeappsver	20.12.3
+%define		kdeappsver	21.04.0
 %define		kframever	5.56.0
 %define		qtver		5.9.0
 %define		kaname		analitza
 Summary:	Analitza
 Name:		ka5-%{kaname}
-Version:	20.12.3
+Version:	21.04.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	5e364b16611ba0d5920d3793eeb1cf5b
+# Source0-md5:	244ee090c7d1c5847c3ee3ec1431e4e2
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Gui-devel >= 5.11.1
@@ -74,13 +74,13 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{kaname}.lang
 %defattr(644,root,root,755)
-%attr(755,root,root) %ghost %{_libdir}/libAnalitza.so.8
+%ghost %{_libdir}/libAnalitza.so.8
 %attr(755,root,root) %{_libdir}/libAnalitza.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libAnalitzaGui.so.8
+%ghost %{_libdir}/libAnalitzaGui.so.8
 %attr(755,root,root) %{_libdir}/libAnalitzaGui.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libAnalitzaPlot.so.8
+%ghost %{_libdir}/libAnalitzaPlot.so.8
 %attr(755,root,root) %{_libdir}/libAnalitzaPlot.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libAnalitzaWidgets.so.8
+%ghost %{_libdir}/libAnalitzaWidgets.so.8
 %attr(755,root,root) %{_libdir}/libAnalitzaWidgets.so.*.*.*
 %dir %{_libdir}/qt5/qml/org/kde/analitza
 %{_libdir}/qt5/qml/org/kde/analitza/Graph2D.qml
@@ -98,7 +98,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{_includedir}/Analitza5
 %{_libdir}/cmake/Analitza5
-%attr(755,root,root) %{_libdir}/libAnalitza.so
-%attr(755,root,root) %{_libdir}/libAnalitzaGui.so
-%attr(755,root,root) %{_libdir}/libAnalitzaPlot.so
-%attr(755,root,root) %{_libdir}/libAnalitzaWidgets.so
+%{_libdir}/libAnalitza.so
+%{_libdir}/libAnalitzaGui.so
+%{_libdir}/libAnalitzaPlot.so
+%{_libdir}/libAnalitzaWidgets.so
