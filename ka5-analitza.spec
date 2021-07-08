@@ -35,6 +35,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The analitza library will let you add mathematical features to your
 program.
 
+%description -l pl.UTF-8
+Biblioteka analitza pozwoli Ci dodać matematyczne właściwości do
+Twoich programów.
+
 %package devel
 Summary:	Header files for %{kaname} development
 Summary(pl.UTF-8):	Pliki nagłówkowe dla programistów używających %{kaname}
