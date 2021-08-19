@@ -1,15 +1,15 @@
-%define		kdeappsver	21.04.3
+%define		kdeappsver	21.08.0
 %define		kframever	5.56.0
 %define		qtver		5.9.0
 %define		kaname		analitza
 Summary:	Analitza
 Name:		ka5-%{kaname}
-Version:	21.04.3
+Version:	21.08.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	6f41d19892f048f5c88a31c605175df2
+# Source0-md5:	7029564c0f94e0793e6d6a7232691fa7
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Gui-devel >= 5.11.1
